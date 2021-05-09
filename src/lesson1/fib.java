@@ -14,4 +14,16 @@ public class fib {
         }
         return second;
     }
+    public static int fib3(int n){
+        if(n<=1) {
+            return 0;
+        }
+        int first=0;
+        int second=1;
+        while (n-->1){
+            second=first+second;
+            first=second-first;
+        }
+        return second;
+    }
 }
